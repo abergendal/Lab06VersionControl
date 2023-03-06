@@ -12,6 +12,7 @@ def decode(string):
     pass
 
 
+# prints menu
 def menu():
     print('Menu')
     print('-------------')
@@ -20,6 +21,7 @@ def menu():
     print('3. Quit')
 
 
+# loop runs menu and options
 while True:
     menu()
     user_option = int(input('\nPlease enter an option: '))
@@ -31,11 +33,5 @@ while True:
         print(f'The encoded password is {encoded_string}, and the original password is {decode(encoded_string)}\n')
     else:
         break
-
-
-
-
-
-
 
 
