@@ -5,11 +5,10 @@ encoded_string = ''
 def encode(string):
     global encoded_string
     for i in string:
-        encoded_string += str(int(i) + 3)
-
-
-def decode(string):
-    pass
+	if int(i) in range(7):
+		encoded_string += str(int(i) + 3)
+	else:
+		encoded_string += str(int(i) - 7)
 
 
 # prints menu
